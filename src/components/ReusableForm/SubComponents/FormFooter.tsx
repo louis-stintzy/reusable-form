@@ -10,8 +10,8 @@
  * @param {string} props.footerMessage.linkTo - URL vers laquelle redirige le lien
  */
 
-import { NavLink } from 'react-router-dom';
-import { FooterMessageData } from '../../../types';
+import { NavLink } from "react-router-dom";
+import { FooterMessageData } from "../../../types";
 
 interface FormFooterProps {
   formattedTitle: string;
@@ -20,7 +20,7 @@ interface FormFooterProps {
 
 function FormFooter({ formattedTitle, footerMessage }: FormFooterProps) {
   const { type, text, linkText, linkTo } = footerMessage;
-  if (type === 'none') return null;
+  if (type === "none") return null;
   return (
     <div className={`${formattedTitle}-form__link-container--${type}`}>
       {text && (

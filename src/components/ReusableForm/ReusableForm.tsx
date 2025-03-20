@@ -10,18 +10,18 @@
  * @returns {JSX.Element} - Le formulaire généré dynamiquement
  */
 
-import { ZodSchema } from 'zod';
-import { FooterMessageData, FormConfig } from '../../types
-import { useForm, SubmitHandler, FieldValues } from 'react-hook-form';
-import { useEffect, useState } from 'react';
-import { zodResolver } from '@hookform/resolvers/zod';
-import FormContainer from './SubComponents/FormContainer';
-import FormTitle from './SubComponents/FormTitle';
-import FormBase from './SubComponents/FormBase';
-import FormInputs from './SubComponents/FormInputs';
-import FormSubmitButton from './SubComponents/FormSubmitButton';
-import FormFooter from './SubComponents/FormFooter';
-import { formatTitle } from '../../utils/formatTitle';
+import { ZodSchema } from "zod";
+import { FooterMessageData, FormConfig } from "../../types";
+import { useForm, SubmitHandler, FieldValues } from "react-hook-form";
+import { useEffect, useState } from "react";
+import { zodResolver } from "@hookform/resolvers/zod";
+import FormContainer from "./SubComponents/FormContainer";
+import FormTitle from "./SubComponents/FormTitle";
+import FormBase from "./SubComponents/FormBase";
+import FormInputs from "./SubComponents/FormInputs";
+import FormSubmitButton from "./SubComponents/FormSubmitButton";
+import FormFooter from "./SubComponents/FormFooter";
+import { formatTitle } from "../../utils/formatTitle";
 
 export interface ReusableFormProps<T extends FieldValues> {
   isLoading: boolean;
@@ -90,7 +90,7 @@ function ReusableForm<T extends FieldValues>({
         footerMessage={
           footerMessage ??
           formConfig.footerMessage ?? {
-            type: 'none',
+            type: "none",
             text: undefined,
             linkText: undefined,
             linkTo: undefined,
